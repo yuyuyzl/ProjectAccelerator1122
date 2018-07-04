@@ -13,27 +13,26 @@ import org.apache.logging.log4j.Logger;
 public class AcceleratorMod
 {
     public static final String MODID = "acceleratormod";
-    public static final String VERSION = "0.01";
+    public static final String VERSION = "0.02";
     public static final String NAME= "Project Accelerator";
     private static Logger logger;
 
-
+    @SidedProxy(clientSide = "com.yuyuyzl.Accelerator.ClientProxy", serverSide = "com.yuyuyzl.Accelerator.CommonProxy")
+    public static CommonProxy proxy;
     @Mod.EventHandler
-    public void preInit(FMLPreInitializationEvent event)
-    {
-
+    public void preInit(FMLPreInitializationEvent event) {
+        logger = event.getModLog();
+        proxy.preInit(event);
     }
 
     @Mod.EventHandler
-    public void init(FMLInitializationEvent event)
-    {
-
+    public void init(FMLInitializationEvent e) {
+        proxy.init(e);
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent event)
-    {
-
+    public void postInit(FMLPostInitializationEvent e) {
+        proxy.postInit(e);
     }
     @Mod.Instance(AcceleratorMod.MODID)
     public static AcceleratorMod instance;
