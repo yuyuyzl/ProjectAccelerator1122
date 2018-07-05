@@ -16,6 +16,7 @@ public class CommonProxy {
     public void preInit(FMLPreInitializationEvent e) {
         Config.preInit();
         AccCreativeTab.init();
+        AccBlocks.initRegistry();
     }
 
     public void init(FMLInitializationEvent e) {

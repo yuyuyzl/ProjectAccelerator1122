@@ -1,6 +1,6 @@
 tile.acceleratormod.accmachineblock.name=Accelerator Machine Block
 tile.acceleratormod.acccoreblock.name=Accelerator Core
-tile.acceleratormod.acchullblock.name=Accelerator Hull
+tile.acceleratormod.accmachinehull.name=Accelerator Hull
 tile.acceleratormod.acctunnelblock.name=Accelerator Tunnel
 tile.acceleratormod.accenergyblock.name=Accelerator Energy Port
 tile.acceleratormod.accfluidblock.name=Accelerator Fluid Port
