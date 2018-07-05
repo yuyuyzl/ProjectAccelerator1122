@@ -1,9 +1,10 @@
 {
   "forge_marker": 1,
   "defaults": {
-    "model": "cube_all",
+    "model": "cube_column",
     "textures": {
-      "all": "acceleratormod:blocks/blocknormal"
+      "end": "acceleratormod:blocks/hulltopnormal",
+      "side":"acceleratormod:blocks/energynormal"
     }
   },
   "variants": {

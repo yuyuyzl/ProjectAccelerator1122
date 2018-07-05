@@ -18,11 +18,14 @@ import static com.yuyuyzl.Accelerator.AcceleratorMod.MODID;
 public class AccMachineBlock extends Block{
 
 
+
     public AccMachineBlock() {
         super(Material.IRON);
+        String regName=this.getClass().getSimpleName().toLowerCase();
+        setUnlocalizedName(AcceleratorMod.MODID+"."+regName);
+        setRegistryName(regName);
+        AccBlocks.toRegister.add(this);
         setHardness(2.0F);
-        setUnlocalizedName(AcceleratorMod.MODID+".accmachineblock");
-        setRegistryName("accmachineblock");
         setCreativeTab(AccCreativeTab.accCreativeTab);
     }
 
@@ -30,5 +33,7 @@ public class AccMachineBlock extends Block{
     public void initModel() {
         ModelLoader.setCustomModelResourceLocation(Item.getItemFromBlock(this), 0, new ModelResourceLocation(getRegistryName(), "inventory"));
     }
+
+
 
 }

@@ -3,7 +3,7 @@
   "defaults": {
     "model": "cube_all",
     "textures": {
-      "all": "acceleratormod:blocks/blocknormal"
+      "all": "acceleratormod:blocks/blockadv"
     }
   },
   "variants": {
